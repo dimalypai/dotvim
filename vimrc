@@ -27,6 +27,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+set hidden " Allow buffer change without saving
+
 """ Colors
 
 syntax on
@@ -50,7 +52,32 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
+""" Search
+
+set hlsearch " Highlight searches
+set incsearch " Incremental searching
+set ignorecase " Case insensitive...
+set smartcase  " ...except if pattern contains upper case
+
 """ Keys
 
 let mapleader=","
+
+" ; is the same as : in NORMAL mode
+nmap ; :
+
+" jj behaves as Esc in INSERT mode
+imap jj <esc>
+
+" F1 behaves as Esc in many modes
+imap <f1> <esc>
+nmap <f1> <esc>
+vmap <f1> <esc>
+
+" Move by displayed lines
+nnoremap j gj
+nnoremap k gk
+
+" Clear search highlights with ,space
+nmap <leader><space> :noh<cr>
 
