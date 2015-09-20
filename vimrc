@@ -18,7 +18,9 @@ filetype plugin indent on " required for Vundle
 
 """ General
 
-set modelines=0 " prevents security exploits
+" Limitations for security reasons
+set secure
+set modelines=0
 
 " I save all the time, so no backup is needed
 set nobackup
@@ -35,6 +37,18 @@ colorscheme solarized
 """ Visual
 
 set cursorline
+
+set relativenumber
+set number " Makes it a hybrid of relative numbers and absolute for current line
+
+""" Editing
+
+set expandtab " Convert <tab> to spaces
+
+" Two spaces per <tab>
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 """ Keys
 
