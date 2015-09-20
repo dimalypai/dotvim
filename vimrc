@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
 
 " All plugins must be added here
 
@@ -43,6 +44,8 @@ set cursorline
 set relativenumber
 set number " Makes it a hybrid of relative numbers and absolute for current line
 
+set laststatus=2 " Always show the status line
+
 """ Editing
 
 set expandtab " Convert <tab> to spaces
@@ -51,6 +54,8 @@ set expandtab " Convert <tab> to spaces
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+
+set backspace=indent,eol,start " Usual backspace behaviour
 
 """ Search
 
