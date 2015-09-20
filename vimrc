@@ -46,6 +46,12 @@ set number " Makes it a hybrid of relative numbers and absolute for current line
 
 set laststatus=2 " Always show the status line
 
+" Nice command completion above the status line
+set wildmenu
+set wildmode=list:longest,full
+
+set scrolloff=3 " Number of lines around the cursor while scrolling
+
 """ Editing
 
 set expandtab " Convert <tab> to spaces
