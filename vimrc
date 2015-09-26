@@ -10,7 +10,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
+
 Plugin 'bling/vim-airline'
+let g:airline_theme = 'powerlineish'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " All plugins must be added here
 
