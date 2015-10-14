@@ -93,6 +93,12 @@ vmap <f1> <esc>
 nnoremap j gj
 nnoremap k gk
 
+" Easier split navigation
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+
 " Clear search highlights with ,space
 nmap <leader><space> :noh<cr>
 
