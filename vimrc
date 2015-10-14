@@ -18,6 +18,13 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 Plugin 'edkolev/tmuxline.vim'
 
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+augroup pandoc_syntax
+  au! BufNewFile,BufFilePRe,BufRead *.md set filetype=markdown.pandoc
+augroup END
+" Do not display pretty symbols
+let g:pandoc#syntax#conceal#use = 0
+
 " All plugins must be added here
 
 call vundle#end() " required for Vundle
