@@ -43,6 +43,8 @@ set noswapfile
 
 set hidden " Allow buffer change without saving
 
+set autochdir " Use the directory of a file as a working directory
+
 """ Colors
 
 syntax on
