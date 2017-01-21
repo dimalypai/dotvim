@@ -87,13 +87,14 @@ set smartcase  " ...except if pattern contains upper case
 
 """ Keys
 
-let mapleader=","
+let mapleader="\<Space>"
 
 " ; is the same as : in NORMAL mode
 nmap ; :
 
-" jj behaves as Esc in INSERT mode
-imap jj <esc>
+" Small changes for Workman layout (swap j and t)
+nnoremap j t
+map t j
 
 " F1 behaves as Esc in many modes
 imap <f1> <esc>
@@ -106,10 +107,10 @@ nnoremap k gk
 
 " Easier split navigation
 nnoremap <C-H> <C-W><C-H>
-nnoremap <C-J> <C-W><C-J>
+nnoremap <C-T> <C-W><C-J>  " Workman layout adjustment
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 
-" Clear search highlights with ,space
-nmap <leader><space> :noh<cr>
+" Clear search highlights with Return
+nnoremap <cr> :noh<cr><cr>
 
